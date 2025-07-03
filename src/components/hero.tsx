@@ -1,15 +1,18 @@
 import { Button } from '@/components/ui/button';
+import Image from 'next/image';
 
 export default function Hero() {
   return (
     <section id="home" className="relative h-[80dvh] w-full">
-      <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: 'url(https://placehold.co/1920x1080.png)' }}
+      <Image
+        src="https://placehold.co/1920x1080.png"
+        alt="Lush hills of Chikmagalur"
+        fill
+        className="object-cover"
         data-ai-hint="chikmagalur hills"
-      >
-        <div className="absolute inset-0 bg-black/50" />
-      </div>
+        priority
+      />
+      <div className="absolute inset-0 bg-black/50" />
       <div className="relative z-10 flex h-full flex-col items-center justify-center text-center text-white">
         <h1 className="font-headline text-4xl font-bold tracking-tight text-background sm:text-5xl md:text-6xl lg:text-7xl">
           Experience Tranquility
