@@ -1,57 +1,35 @@
-import { Mountain, Coffee, Bird, Flame, Tractor, Gamepad2, Droplets } from 'lucide-react';
-import type { LucideIcon } from 'lucide-react';
-import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
+import Image from 'next/image';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './ui/card';
 
 const activities = [
   {
-    icon: Coffee,
-    title: 'Coffee Plantation Walks',
-    description: 'Stroll through our lush coffee estate and learn about the bean-to-cup journey.',
+    title: 'Rain Dance',
+    description: 'Cool off and have a blast with our exciting rain dance setup, complete with music to get you moving.',
+    image: {
+      src: 'https://placehold.co/600x400.png',
+      alt: 'Rain dance party',
+      aiHint: 'rain dance'
+    }
   },
   {
-    icon: Mountain,
-    title: 'Guided Treks',
-    description: 'Embark on an adventurous trek to nearby peaks like Mullayanagiri or Baba Budangiri.',
+    title: 'Campfire with Music',
+    description: 'Enjoy a classic campfire experience under the stars, with live music to set the mood.',
+    image: {
+      src: 'https://placehold.co/600x400.png',
+      alt: 'Campfire with music',
+      aiHint: 'campfire music'
+    }
   },
   {
-    icon: Bird,
-    title: 'Bird Watching',
-    description: 'Discover the diverse avian life that inhabits the hills of Chikmagalur.',
-  },
-  {
-    icon: Flame,
-    title: 'Campfire & Barbecue',
-    description: 'Enjoy a cozy evening with a warm campfire and delicious barbecue under the stars.',
-  },
-  {
-    icon: Tractor,
-    title: 'Jeep Rides',
-    description: 'Experience a thrilling off-road jeep ride through the scenic estate trails.',
-  },
-  {
-    icon: Gamepad2,
-    title: 'Indoor/Outdoor Games',
-    description: 'We have a variety of games to keep you entertained during your stay.',
-  },
-  {
-    icon: Droplets,
-    title: 'Waterfall Visits',
-    description: 'Visit spectacular nearby waterfalls like Hebbe Falls and Jhari Falls.',
-  },
+    title: 'Swimming Pool',
+    description: 'Take a refreshing dip in our pristine swimming pool, perfect for a relaxing afternoon.',
+    image: {
+      src: 'https://placehold.co/600x400.png',
+      alt: 'Swimming pool',
+      aiHint: 'swimming pool'
+    }
+  }
 ];
-
-const ActivityCard = ({ icon: Icon, title, description }: { icon: LucideIcon; title: string; description: string }) => (
-    <div className="flex items-start gap-4">
-      <div className="flex h-12 w-12 items-center justify-center rounded-full bg-accent/10 text-accent">
-        <Icon className="h-6 w-6" />
-      </div>
-      <div>
-        <h3 className="font-headline text-lg font-semibold">{title}</h3>
-        <p className="mt-1 text-foreground/70">{description}</p>
-      </div>
-    </div>
-);
-
 
 export default function Activities() {
   return (
@@ -60,12 +38,27 @@ export default function Activities() {
         <div className="text-center space-y-4 mb-12">
           <h2 className="text-3xl font-bold tracking-tight font-headline text-primary">Things to Do During Your Stay</h2>
           <p className="text-lg text-foreground/80 max-w-3xl mx-auto">
-            From serene walks to adventurous treks, there's something for everyone at Serene Stays.
+            From relaxing swims to exciting nights by the fire, there's something for everyone at Serene Stays.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {activities.map((activity) => (
-            <ActivityCard key={activity.title} {...activity} />
+            <Card key={activity.title} className="flex flex-col overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <CardHeader className="p-0">
+                 <Image
+                  src={activity.image.src}
+                  alt={activity.image.alt}
+                  width={600}
+                  height={400}
+                  className="w-full h-56 object-cover"
+                  data-ai-hint={activity.image.aiHint}
+                />
+              </CardHeader>
+              <CardContent className="p-6 flex-grow">
+                <CardTitle className="font-headline text-xl mb-2">{activity.title}</CardTitle>
+                <CardDescription>{activity.description}</CardDescription>
+              </CardContent>
+            </Card>
           ))}
         </div>
       </div>

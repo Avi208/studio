@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <section id="home" className="relative h-[80dvh] w-full">
       <Image
-        src="https://placehold.co/1920x1080.png"
+        src="/home.jpg"
         alt="Lush hills of Chikmagalur"
         fill
         className="object-cover"

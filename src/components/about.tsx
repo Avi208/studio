@@ -16,7 +16,7 @@ export default function About() {
           </div>
           <div className="grid grid-cols-2 gap-4">
             <Image
-              src="https://placehold.co/600x400.png"
+              src="/image_resized_1_600x400.jpg"
               alt="Homestay Exterior"
               width={600}
               height={400}
@@ -24,7 +24,7 @@ export default function About() {
               data-ai-hint="homestay exterior"
             />
             <Image
-              src="https://placehold.co/600x400.png"
+              src="/image_resized_2_600x400.jpg"
               alt="Homestay Interior"
               width={600}
               height={400}
@@ -32,7 +32,7 @@ export default function About() {
               data-ai-hint="cozy interior"
             />
              <Image
-              src="https://placehold.co/600x400.png"
+              src="/image_resized_3_600x400.jpg"
               alt="Homestay Surroundings"
               width={600}
               height={400}
@@ -40,7 +40,39 @@ export default function About() {
               data-ai-hint="lush surroundings"
             />
              <Image
-              src="https://placehold.co/600x400.png"
+              src="/four_sharing.jpeg"
+              alt="View from room"
+              width={600}
+              height={400}
+              className="rounded-lg shadow-md aspect-video object-cover"
+              data-ai-hint="mountain view"
+            />
+            <Image
+              src="/side_view.jpeg"
+              alt="View from room"
+              width={600}
+              height={400}
+              className="rounded-lg shadow-md aspect-video object-cover"
+              data-ai-hint="mountain view"
+            />
+            <Image
+              src="/outing.jpeg"
+              alt="View from room"
+              width={600}
+              height={400}
+              className="rounded-lg shadow-md aspect-video object-cover"
+              data-ai-hint="mountain view"
+            />
+            <Image
+              src="/single_share.jpeg"
+              alt="View from room"
+              width={600}
+              height={400}
+              className="rounded-lg shadow-md aspect-video object-cover"
+              data-ai-hint="mountain view"
+            />
+            <Image
+              src="/room_two_share.jpeg"
               alt="View from room"
               width={600}
               height={400}

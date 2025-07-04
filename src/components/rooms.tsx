@@ -10,7 +10,7 @@ const roomsData = [
     price: '₹5,000',
     amenities: ['King Size Bed', 'Private Balcony', 'Wi-Fi', 'Hot Water', 'Room Service'],
     image: {
-      src: 'https://placehold.co/600x400.png',
+      src: '/single_share.jpeg',
       alt: 'Coffee Bloom Suite',
       aiHint: 'luxury suite'
     }
@@ -21,7 +21,7 @@ const roomsData = [
     price: '₹4,000',
     amenities: ['Queen Size Bed', 'Valley View', 'Wi-Fi', 'Hot Water', 'Kettle'],
     image: {
-      src: 'https://placehold.co/600x400.png',
+      src: '/room_two_share.jpeg',
       alt: 'Misty Valley Room',
       aiHint: 'cozy bedroom'
     }
@@ -32,7 +32,7 @@ const roomsData = [
     price: '₹4,500',
     amenities: ['Attached Sit-out', 'Garden Access', 'Wi-Fi', 'Hot Water', 'Bonfire Access'],
     image: {
-      src: 'https://placehold.co/600x400.png',
+      src: '/four_sharing.jpeg',
       alt: 'The Planter\'s Cottage',
       aiHint: 'rustic cottage'
     }
