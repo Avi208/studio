@@ -3,33 +3,6 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './ui/
 
 const activities = [
   {
-    title: 'Rain Dance',
-    description: 'Cool off and have a blast with our exciting rain dance setup, complete with music to get you moving.',
-    image: {
-      src: 'https://placehold.co/600x400.png',
-      alt: 'Rain dance party',
-      aiHint: 'rain dance'
-    }
-  },
-  {
-    title: 'Campfire with Music',
-    description: 'Enjoy a classic campfire experience under the stars, with live music to set the mood.',
-    image: {
-      src: 'https://placehold.co/600x400.png',
-      alt: 'Campfire with music',
-      aiHint: 'campfire music'
-    }
-  },
-  {
-    title: 'Swimming Pool',
-    description: 'Take a refreshing dip in our pristine swimming pool, perfect for a relaxing afternoon.',
-    image: {
-      src: 'https://placehold.co/600x400.png',
-      alt: 'Swimming pool',
-      aiHint: 'swimming pool'
-    }
-  },
-  {
     title: 'Coffee Plantation Tour',
     description: 'Walk through the lush coffee estates, learn about the bean-to-cup process, and taste fresh coffee.',
     image: {
@@ -54,6 +27,24 @@ const activities = [
       src: 'https://placehold.co/600x400.png',
       alt: 'Bird watching with binoculars',
       aiHint: 'bird watching'
+    }
+  },
+  {
+    title: 'Rain Dance',
+    description: 'Cool off and have a blast with our exciting rain dance setup, complete with music to get you moving.',
+    image: {
+      src: 'https://placehold.co/600x400.png',
+      alt: 'Rain dance party',
+      aiHint: 'rain dance'
+    }
+  },
+  {
+    title: 'Campfire with Music',
+    description: 'Enjoy a classic campfire experience under the stars, with live music to set the mood.',
+    image: {
+      src: 'https://placehold.co/600x400.png',
+      alt: 'Campfire with music',
+      aiHint: 'campfire music'
     }
   }
 ];
