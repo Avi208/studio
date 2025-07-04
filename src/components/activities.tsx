@@ -28,6 +28,33 @@ const activities = [
       alt: 'Swimming pool',
       aiHint: 'swimming pool'
     }
+  },
+  {
+    title: 'Coffee Plantation Tour',
+    description: 'Walk through the lush coffee estates, learn about the bean-to-cup process, and taste fresh coffee.',
+    image: {
+      src: 'https://placehold.co/600x400.png',
+      alt: 'Coffee Plantation',
+      aiHint: 'coffee plantation'
+    }
+  },
+  {
+    title: 'Nature Walk & Trekking',
+    description: 'Explore the scenic beauty of the Western Ghats with our guided nature walks and trekking trails.',
+    image: {
+      src: 'https://placehold.co/600x400.png',
+      alt: 'Trekking in hills',
+      aiHint: 'nature trail'
+    }
+  },
+  {
+    title: 'Bird Watching',
+    description: 'A paradise for bird lovers. Spot a variety of exotic birds in their natural habitat around our property.',
+    image: {
+      src: 'https://placehold.co/600x400.png',
+      alt: 'Bird watching with binoculars',
+      aiHint: 'bird watching'
+    }
   }
 ];
 
