@@ -4,7 +4,7 @@ import { Toaster } from '@/components/ui/toaster';
 import { cn } from '@/lib/utils';
 
 export const metadata: Metadata = {
-  title: 'Chikmagalur Escapes | Serene Stays Homestay',
+  title: 'Chikmagalur Escapes | The Bee Hive Home Stay',
   description: 'Experience Tranquility in the Heart of Coffee Country. A cozy homestay nestled in the lush hills of Chikmagalur.',
 };
 

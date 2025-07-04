@@ -56,7 +56,7 @@ export default function Activities() {
         <div className="text-center space-y-4 mb-12">
           <h2 className="text-3xl font-bold tracking-tight font-headline text-primary">Things to Do During Your Stay</h2>
           <p className="text-lg text-foreground/80 max-w-3xl mx-auto">
-            From relaxing swims to exciting nights by the fire, there's something for everyone at Serene Stays.
+            From relaxing swims to exciting nights by the fire, there's something for everyone at The Bee Hive Home Stay.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

@@ -28,7 +28,7 @@ const prompt = ai.definePrompt({
   name: 'bookingInquiryResponsePrompt',
   input: {schema: BookingInquiryInputSchema},
   output: {schema: BookingInquiryOutputSchema},
-  prompt: `You are a customer service agent for Serene Stays in Chikmagalur. Your task is to respond to customer inquiries and booking requests in a polite and informative manner.
+  prompt: `You are a customer service agent for The Bee Hive Home Stay in Chikmagalur. Your task is to respond to customer inquiries and booking requests in a polite and informative manner.
 
 Here is the customer's inquiry:
 {{{inquiry}}}

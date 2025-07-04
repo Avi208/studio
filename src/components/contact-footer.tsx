@@ -6,7 +6,7 @@ export default function ContactFooter() {
       <div className="container mx-auto max-w-7xl px-4 py-12">
         <div className="grid md:grid-cols-3 gap-8 text-center md:text-left">
           <div className="space-y-4">
-            <h3 className="text-xl font-headline font-semibold">Serene Stays</h3>
+            <h3 className="text-xl font-headline font-semibold">The Bee Hive Home Stay</h3>
             <p className="text-primary-foreground/80">
               Your perfect getaway in the lush hills of Chikmagalur. We look forward to welcoming you.
             </p>
@@ -29,7 +29,7 @@ export default function ContactFooter() {
           </div>
         </div>
         <div className="mt-12 text-center text-sm text-primary-foreground/60 border-t border-primary-foreground/20 pt-8">
-            <p>&copy; {new Date().getFullYear()} Serene Stays, Chikmagalur. All Rights Reserved.</p>
+            <p>&copy; {new Date().getFullYear()} The Bee Hive Home Stay, Chikmagalur. All Rights Reserved.</p>
         </div>
       </div>
     </footer>

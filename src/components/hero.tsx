@@ -15,7 +15,7 @@ export default function Hero() {
       <div className="absolute inset-0 bg-black/50" />
       <div className="relative z-10 flex h-full flex-col items-center justify-center text-center text-white">
         <h1 className="font-headline text-4xl font-bold tracking-tight text-background sm:text-5xl md:text-6xl lg:text-7xl">
-          Experience Tranquility
+          The Bee Hive Home stay 
         </h1>
         <h2 className="mt-4 font-headline text-2xl font-bold tracking-tight text-background sm:text-3xl md:text-4xl">
           in the Heart of Coffee Country

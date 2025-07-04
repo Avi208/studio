@@ -38,7 +38,7 @@ export default function Header() {
               <nav className="grid gap-6 text-lg font-medium mt-8">
                 <a href="/" className="flex items-center gap-2 text-lg font-semibold">
                   <Coffee className="h-6 w-6 text-primary" />
-                  <span className="font-bold font-headline">Serene Stays</span>
+                  <span className="font-bold font-headline">The Bee Hive Home Stay</span>
                 </a>
                 {navLinks.map((link) => (
                   <a key={link.href} href={link.href} className="transition-colors hover:text-primary">

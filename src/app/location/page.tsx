@@ -3,7 +3,7 @@ import ContactFooter from '@/components/contact-footer';
 
 export default function LocationPage() {
   // IMPORTANT: Replace this with your Google Maps embed URL
-  const mapEmbedUrl = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124458.02613581177!2d75.7138328428581!3d13.321156641774312!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbad96843339591%3A0x29c719119059f635!2sChikkamagaluru%2C%20Karnataka%2C%20India!5e0!3m2!1sen!2sus!4v1622543210987!5m2!1sen!2sus";
+  const mapEmbedUrl = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3930.343987963801!2d75.80271907504947!3d13.29436168700756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbad73318de7d63%3A0x6ddcbc00bf922c12!2sThe%20Bee%20Hive%20Homestay!5e0!3m2!1sen!2sin!4v1720070000000!5m2!1sen!2sin";
 
   return (
     <div className="flex min-h-dvh w-full flex-col bg-background">
@@ -26,7 +26,7 @@ export default function LocationPage() {
                 allowFullScreen={true}
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Location of Serene Stays on Google Maps"
+                title="Location of The Bee Hive Home Stay on Google Maps"
               ></iframe>
             </div>
              <div className="mt-4 text-center">
