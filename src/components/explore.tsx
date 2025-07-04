@@ -5,31 +5,31 @@ import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 const places = [
   {
     name: 'Mullayanagiri Peak',
-    image: { src: 'https://placehold.co/600x400.png', alt: 'Mullayanagiri Peak', aiHint: 'scenic mountain peak' },
+    image: { src: '/mullanyanagiri.png', alt: 'Mullayanagiri Peak', aiHint: 'scenic mountain peak' },
   },
   {
     name: 'Baba Budangiri',
-    image: { src: 'https://placehold.co/600x400.png', alt: 'Baba Budangiri', aiHint: 'mountain shrine' },
+    image: { src: '/bababudangiri.jpg', alt: 'Baba Budangiri', aiHint: 'mountain shrine' },
   },
   {
     name: 'Hebbe Falls',
-    image: { src: 'https://placehold.co/600x400.png', alt: 'Hebbe Falls', aiHint: 'cascading waterfall' },
+    image: { src: '/abbeFalls.jpeg', alt: 'Hebbe Falls', aiHint: 'cascading waterfall' },
   },
   {
     name: 'Kudremukh National Park',
-    image: { src: 'https://placehold.co/600x400.png', alt: 'Kudremukh National Park', aiHint: 'wildlife park' },
+    image: { src: '/kudremukha.jpg', alt: 'Kudremukh National Park', aiHint: 'wildlife park' },
   },
   {
     name: 'Coffee Museum',
-    image: { src: 'https://placehold.co/600x400.png', alt: 'Coffee Museum', aiHint: 'coffee museum' },
+    image: { src: '/coffee_museum.jpg', alt: 'Coffee Museum', aiHint: 'coffee museum' },
   },
   {
     name: 'Bhadra Wildlife Sanctuary',
-    image: { src: 'https://placehold.co/600x400.png', alt: 'Bhadra Wildlife Sanctuary', aiHint: 'wildlife sanctuary' },
+    image: { src: '/bhadra_wildlife_sanctuary.jpg', alt: 'Bhadra Wildlife Sanctuary', aiHint: 'wildlife sanctuary' },
   },
   {
     name: 'Hirekolale Lake',
-    image: { src: 'https://placehold.co/600x400.png', alt: 'Hirekolale Lake', aiHint: 'serene lake' },
+    image: { src: '/hirekolale_lake.webp', alt: 'Hirekolale Lake', aiHint: 'serene lake' },
   },
 ];
 

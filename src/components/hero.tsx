@@ -8,7 +8,7 @@ export default function Hero() {
         src="/home.jpg"
         alt="Lush hills of Chikmagalur"
         fill
-        className="object-cover"
+        className="object-cover object-center" // Explicitly center the image
         data-ai-hint="chikmagalur hills"
         priority
       />

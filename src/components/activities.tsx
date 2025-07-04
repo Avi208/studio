@@ -3,28 +3,28 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './ui/
 
 const activities = [
   {
-    title: 'Coffee Plantation Tour',
-    description: 'Walk through the lush coffee estates, learn about the bean-to-cup process, and taste fresh coffee.',
+    title: 'Chess and Carrom',
+    description: 'Challenge your mind with a strategic game of chess, and classic game of carrom in a cozy setting, Perfect for relaxing evenings at the homestay.',
     image: {
-      src: 'https://placehold.co/600x400.png',
+      src: '/chess_carrom.jpg',
       alt: 'Coffee Plantation',
-      aiHint: 'coffee plantation'
+      aiHint: 'Challenge your mind with a strategic game of chess, and classic game of carrom in a cozy setting, Perfect for relaxing evenings at the homestay.'
     }
   },
   {
-    title: 'Nature Walk & Trekking',
-    description: 'Explore the scenic beauty of the Western Ghats with our guided nature walks and trekking trails.',
+    title: 'Shuttle Badminton',
+    description: 'Stay active and energized with a lively game of shuttle badminton in the fresh outdoor air. Perfect for friendly matches and fun moments with fellow guests.',
     image: {
-      src: 'https://placehold.co/600x400.png',
+      src: '/badminton.jpeg',
       alt: 'Trekking in hills',
       aiHint: 'nature trail'
     }
   },
   {
-    title: 'Bird Watching',
-    description: 'A paradise for bird lovers. Spot a variety of exotic birds in their natural habitat around our property.',
+    title: 'Swimming Pool',
+    description: 'Take a refreshing dip and unwind with a relaxing swim surrounded by nature. Perfect for cooling off and enjoying leisurely moments during your stay.',
     image: {
-      src: 'https://placehold.co/600x400.png',
+      src: '/swimming_pool.jpeg',
       alt: 'Bird watching with binoculars',
       aiHint: 'bird watching'
     }
@@ -33,7 +33,7 @@ const activities = [
     title: 'Rain Dance',
     description: 'Cool off and have a blast with our exciting rain dance setup, complete with music to get you moving.',
     image: {
-      src: 'https://placehold.co/600x400.png',
+      src: '/rain_dance.jpg',
       alt: 'Rain dance party',
       aiHint: 'rain dance'
     }
@@ -42,7 +42,7 @@ const activities = [
     title: 'Campfire with Music',
     description: 'Enjoy a classic campfire experience under the stars, with live music to set the mood.',
     image: {
-      src: 'https://placehold.co/600x400.png',
+      src: '/fire_camp.jpeg',
       alt: 'Campfire with music',
       aiHint: 'campfire music'
     }

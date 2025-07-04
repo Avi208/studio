@@ -30,7 +30,7 @@ export default function Dining() {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div className="lg:col-span-1 md:col-span-2 flex items-center">
             <Image 
-              src="https://placehold.co/600x800.png"
+              src="/creative_food_collage_600x800.jpg"
               alt="Local Cuisine"
               width={600}
               height={800}

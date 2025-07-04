@@ -14,9 +14,9 @@ export default function ContactFooter() {
           <div className="space-y-4">
             <h3 className="text-xl font-headline font-semibold">Contact Us</h3>
             <ul className="space-y-2 text-primary-foreground/80">
-              <li><a href="tel:+911234567890" className="hover:underline">Phone: +91 12345 67890</a></li>
-              <li><a href="mailto:contact@serenestays.com" className="hover:underline">Email: contact@serenestays.com</a></li>
-              <li><a href="https://wa.me/911234567890" target="_blank" rel="noopener noreferrer" className="hover:underline">WhatsApp: +91 12345 67890</a></li>
+              <li><a href="tel:+911234567890" className="hover:underline">Phone: +91 8748914626</a></li>
+              <li><a href="mailto:contact@serenestays.com" className="hover:underline">Email: contact@thebeehive.com</a></li>
+              <li><a href="https://wa.me/911234567890" target="_blank" rel="noopener noreferrer" className="hover:underline">WhatsApp: +91 8748914626</a></li>
             </ul>
           </div>
           <div className="space-y-4">
