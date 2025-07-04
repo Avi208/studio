@@ -30,7 +30,6 @@ export default function ContactFooter() {
         </div>
         <div className="mt-12 text-center text-sm text-primary-foreground/60 border-t border-primary-foreground/20 pt-8">
             <p>&copy; {new Date().getFullYear()} Serene Stays, Chikmagalur. All Rights Reserved.</p>
-            <p className="mt-4 text-xs">Note: Google Map embed would be here. An API key is required for implementation.</p>
         </div>
       </div>
     </footer>
