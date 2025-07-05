@@ -13,7 +13,6 @@ import { Textarea } from '@/components/ui/textarea';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form';
 import { useToast } from '@/hooks/use-toast';
-import { Slider } from '@/components/ui/slider';
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { Command, CommandEmpty, CommandGroup, CommandInput, CommandItem, CommandList } from "@/components/ui/command";
 import { cn } from '@/lib/utils';
@@ -52,6 +51,23 @@ const StarRatingInput = ({ value, onChange }: { value: number, onChange: (value:
           key={star}
           className={cn(
             "h-8 w-8 cursor-pointer transition-colors",
+            star <= value ? 'text-yellow-400 fill-yellow-400' : 'text-gray-300'
+          )}
+          onClick={() => onChange(star)}
+        />
+      ))}
+    </div>
+  );
+};
+
+const SurveyStarRatingInput = ({ value, onChange }: { value: number, onChange: (value: number) => void }) => {
+  return (
+    <div className="flex gap-1">
+      {[1, 2, 3, 4, 5].map((star) => (
+        <Star
+          key={star}
+          className={cn(
+            "h-6 w-6 cursor-pointer transition-colors",
             star <= value ? 'text-yellow-400 fill-yellow-400' : 'text-gray-300'
           )}
           onClick={() => onChange(star)}
@@ -165,16 +181,28 @@ export default function FeedbackPageClient({ initialFeedback }: FeedbackPageClie
                   <h4 className="text-lg font-semibold mb-4">Detailed Survey</h4>
                   <div className="space-y-4">
                     <FormField control={form.control} name="survey.cleanliness" render={({ field }) => (
-                      <FormItem><FormLabel>Cleanliness: {field.value}</FormLabel><FormControl><Slider defaultValue={[3]} min={1} max={5} step={1} onValueChange={(vals) => field.onChange(vals[0])} /></FormControl></FormItem>
+                      <FormItem className="flex items-center justify-between">
+                        <FormLabel>Cleanliness</FormLabel>
+                        <FormControl><SurveyStarRatingInput value={field.value} onChange={field.onChange} /></FormControl>
+                      </FormItem>
                     )} />
                     <FormField control={form.control} name="survey.hospitality" render={({ field }) => (
-                      <FormItem><FormLabel>Hospitality: {field.value}</FormLabel><FormControl><Slider defaultValue={[3]} min={1} max={5} step={1} onValueChange={(vals) => field.onChange(vals[0])} /></FormControl></FormItem>
+                      <FormItem className="flex items-center justify-between">
+                        <FormLabel>Hospitality</FormLabel>
+                        <FormControl><SurveyStarRatingInput value={field.value} onChange={field.onChange} /></FormControl>
+                      </FormItem>
                     )} />
                     <FormField control={form.control} name="survey.location" render={({ field }) => (
-                      <FormItem><FormLabel>Location: {field.value}</FormLabel><FormControl><Slider defaultValue={[3]} min={1} max={5} step={1} onValueChange={(vals) => field.onChange(vals[0])} /></FormControl></FormItem>
+                      <FormItem className="flex items-center justify-between">
+                        <FormLabel>Location</FormLabel>
+                        <FormControl><SurveyStarRatingInput value={field.value} onChange={field.onChange} /></FormControl>
+                      </FormItem>
                     )} />
                     <FormField control={form.control} name="survey.value" render={({ field }) => (
-                      <FormItem><FormLabel>Value for Money: {field.value}</FormLabel><FormControl><Slider defaultValue={[3]} min={1} max={5} step={1} onValueChange={(vals) => field.onChange(vals[0])} /></FormControl></FormItem>
+                      <FormItem className="flex items-center justify-between">
+                        <FormLabel>Value for Money</FormLabel>
+                        <FormControl><SurveyStarRatingInput value={field.value} onChange={field.onChange} /></FormControl>
+                      </FormItem>
                     )} />
                   </div>
                 </div>
